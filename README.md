@@ -1,13 +1,13 @@
 <div align="center">
-<img src="https://telegra.ph/file/fbe3160f0ad0e14abeeeb.jpg" width="150" height="150" border="0" alt="PFP">
+<img src="https://telegra.ph/file/f09f40f4a37713f73de30.jpg" width="150" height="150" border="0" alt="PFP">
 
-# Kaguya PublicBot - MD
+# Ayra si Comel 
 ### Use at your own risk!
 
 ## [![JavaScript](https://img.shields.io/badge/JavaScript-d6cc0f?style=for-the-badge&logo=javascript&logoColor=white)](https://javascript.com) [![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/) [![discord.js](https://img.shields.io/badge/discord.js-0026a3?style=for-the-badge&logo=discord&logoColor=white)](https://discord.js.org)
 
 > Build with Baileys and discord.js ( as a command handler ) <br />
-> [Legacy](https://github.com/FaizBastomi/wbot/tree/legacy) branch <br />
+> [Legacy](https://github.com/dmibot/comel/tree/legacy) branch <br />
 Untuk instalasi bahasa Indonesia lihat [disini](./ID.md)<br />
 
 </div><br />
@@ -103,3 +103,8 @@ npm run start
 ```
 npm run legacy
 ```
+
+
+finally
+
+Big Thanks to @FaizBastomi for created sc.

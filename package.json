@@ -1,10 +1,10 @@
 {
   "name": "wbot-md",
   "description":"A WhatsApp Bot built with Baileys",
-  "version": "1.0.1-4",
+  "version": "1.0.1-1",
   "main": "./lib/connect.js",
   "license": "MIT",
-  "author": "FaizBastomi",
+  "author": "Opux the Recoder",
   "scripts": {
     "start": "node ."
   },
@@ -12,7 +12,7 @@
     "@adiwajshing/baileys": "^4.1.0",
     "@vitalets/google-translate-api": "^8.0.0",
     "axios": "^0.26.1",
-    "brainly-scraper-v2": "1.1.2",
+    "brainly-scraper-v2": "2.0.10",
     "chalk": "4.1.2",
     "cheerio": "1.0.0-rc.10",
     "file-type": "16.5.3",
@@ -31,7 +31,7 @@
     "@hapi/boom": "^9.1.4",
     "bluebird": "^3.7.2",
     "jimp": "^0.16.1",
-    "pino": "^7.6.5",
+    "pino": "^7.10.0",
     "qrcode-terminal": "^0.12.0"
   }
 }
