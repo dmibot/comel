@@ -18,7 +18,7 @@ module.exports = {
         if (!args.length > 0) {
             await sock.sendMessage(from, {
                 text: `#vote ${this.use}`,
-                footer: "Kaguya PublicBot • FaizBastomi"
+                footer: "Ayra Si Comel • OpuxTad\n\nSawo12 Base"
             }, { quoted: msg });
         }
 
@@ -37,7 +37,7 @@ module.exports = {
                     ]
                     await sock.sendMessage(from, {
                         text: `Vote name: *${(vote.show(from)).data.name}*\n\nVote created.`,
-                        footer: "Kaguya PublicBot • FaizBastomi",
+                        footer: "Ayra Si Comel • OpuxTad\n\nSawo12 Base",
                         buttons
                     }, { quoted: msg });
                 }
@@ -77,7 +77,7 @@ module.exports = {
                         ...voteData["upvote"],
                         ...voteData["downvote"]
                     ],
-                    footer: "Kaguya PublicBot • FaizBastomi",
+                    footer: "Ayra Si Comel • OpuxTad\n\nSawo12 Base",
                     buttons
                 }, { quoted: msg });
             }

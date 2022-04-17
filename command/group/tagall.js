@@ -17,7 +17,7 @@ module.exports = {
         let mems_id = new Array();
         let text = args.join(' ') + "\n\n";
         for (let i of groupMem) {
-            text += `@${i.id.split('@')[0]}\n`;
+            text += `@${i.id.split('@')[0]}\n\n`;
             mems_id.push(i.id);
         }
         
