@@ -31,7 +31,7 @@ module.exports = {
                 ]
                 await sock.sendMessage(msg.from, {
                     text,
-                    footer: "Kaguya PublicBot • FaizBastomi",
+                    footer: "Ayra si Comel • OpuxTad",
                     buttons,
                     headerType: 1
                 }, { quoted: msg });
@@ -42,7 +42,7 @@ module.exports = {
                 ]
                 await sock.sendMessage(msg.from, {
                     text,
-                    footer: "Kaguya PublicBot • FaizBastomi",
+                    footer: "Ayra si Comel • OpuxTad",
                     buttons,
                     headerType: 1
                 }, { quoted: msg });
@@ -52,7 +52,7 @@ module.exports = {
                 ]
                 await sock.sendMessage(msg.from, {
                     text,
-                    footer: "Kaguya PublicBot • FaizBastomi",
+                    footer: "Ayra si Comel • OpuxTad",
                     buttons,
                     headerType: 1
                 }, { quoted: msg });

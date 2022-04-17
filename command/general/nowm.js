@@ -25,7 +25,7 @@ module.exports = {
                     fs.unlinkSync(`./temp/${ran1}`);
                 })
             } else {
-                await msg.reply("Please, reply to a sticker");
+                await msg.reply("Please, reply to a sticker\nBalas di Stiker");
             }
         } catch (e) {
             await msg.reply(`Error while creating sticker\n${e.message}`);
