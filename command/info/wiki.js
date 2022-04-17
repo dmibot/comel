@@ -8,7 +8,7 @@ module.exports = {
     category: "information",
     async exec(msg, sock, args) {
         const { from } = msg
-        if (!args.length > 0) return await msg.reply('No query given to search');
+        if (!args.length > 0) return await msg.reply('Isi dulu query/kata yang ingin dicari');
         try {
             const lang = args[0];
             switch (lang) {

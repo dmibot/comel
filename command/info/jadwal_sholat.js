@@ -1,10 +1,10 @@
 const axios = require("axios").default;
-let info = 'Data yang tersedia, dari Januari 2021 sampai Desember 2030\n'
+let info = 'Data yang tersedia, dari Januari 2021 sampai Desember 2030\n\nSumber: Kementerian Agama RI'
     + 'Hanya tersedia untuk kota-kota besar di Indonesia. Kota lainnya, silakan disesuaikan sendiri sesuai plus minus waktu setempat.'
 
 module.exports = {
     name: "sholat",
-    alias: ["jadwalsholat", "jadwal"],
+    alias: ["jadwalsholat", "jadwal", "imsakiyah", "imsyakiyah"],
     use: "<nama kota>",
     category: "information",
     async exec(msg, sock, args) {
@@ -20,7 +20,7 @@ module.exports = {
 
                 if (cityData.length === 1) {
                     // get prayer times by city id
-                    citySchedule = await getJadwal(cityData[0]?.id, "bulanan");
+                    citySchedule = await getJadwal(cityData[0]?.id, "harian");
                     await msg.reply(citySchedule);
                 }
                 else {
@@ -37,7 +37,7 @@ module.exports = {
                     await sock.sendMessage(msg.from, {
                         text: "Hasil pencarian kota",
                         buttonText: "hasil",
-                        footer: "Kaguya PublicBot • FaizBastomi",
+                        footer: "Ayra si Comel • Opux Tad\nMarilah Sholat Berjama'ah",
                         sections
                     }, { quoted: msg });
                 }

@@ -2,9 +2,9 @@ const { openWeatherAPI } = require("../../utils")
 
 module.exports = {
     name: "cuaca",
-    alias: ["weather"],
+    alias: ["weather", "suhu"],
     desc: "Weather Report/Laporan Cuaca",
-    use: "<city>\nEx: !weather jakarta",
+    use: "<city>\nEx: !weather dumai",
     category: "information",
     async exec(msg, sock, args) {
         const { from, quoted } = msg
@@ -17,10 +17,10 @@ module.exports = {
                 let info = await openWeatherAPI(geo, "geo")
                 if (info.status !== 200) return await msg.reply(info.msg);
                 else {
-                    let text = `☁️ Weather Report ☁️\n> ${info.name}\n\n`
+                    let text = `☁️ Prakiraan Cuaca Hari Ini ☁️\n> ${info.name}\n\n`
                         + `\`\`\`Deskripsi/Desc: ${info.desc}\nSuhu/Temp: ${info.temp}\nTerasa/Feels like: ${info.feels}\nTekanan/Pressure: ${info.press}\nKelembaban/Humidity: ${info.humi}\n`
                         + `Jarak Pandang/Visibility: ${info.visible}\nKecepatan Angin/Wind Speed: ${info.wind}\`\`\``
-                        + `\n\n*Powered by* openweathermap.org\nMore https://openweathermap.org/city/${info.id}`
+                        + `\n\n*Ayra si Comel • OpuxTad\nMore https://openweathermap.org/city/${info.id}`
                     await msg.reply(text);
                 }
             } else if (quoted?.message?.liveLocationMessage) {
@@ -28,20 +28,20 @@ module.exports = {
                 let info = await openWeatherAPI(geo, "geo")
                 if (info.status !== 200) return await msg.reply(info.msg);
                 else {
-                    let text = `☁️ Weather Report ☁️\n> ${info.name}\n\n`
+                    let text = `☁️ Prakiraan Cuaca Hari Ini ☁️\n> ${info.name}\n\n`
                         + `\`\`\`Deskripsi/Desc: ${info.desc}\nSuhu/Temp: ${info.temp}\nTerasa/Feels like: ${info.feels}\nTekanan/Pressure: ${info.press}\nKelembaban/Humidity: ${info.humi}\n`
                         + `Jarak Pandang/Visibility: ${info.visible}\nKecepatan Angin/Wind Speed: ${info.wind}\`\`\``
-                        + `\n\n*Powered by* openweathermap.org\nMore https://openweathermap.org/city/${info.id}`
+                        + `\n\n*Ayra si Comel • OpuxTad\nMore https://openweathermap.org/city/${info.id}`
                     await msg.reply(from, { text }, { quoted: msg });
                 }
             } else {
                 let info = await openWeatherAPI(args.join(" "), "city")
                 if (info.status !== 200) return await msg.reply(info.msg);
                 else {
-                    let text = `☁️ Weather Report ☁️\n> ${info.name}\n\n`
+                    let text = `☁️ Prakiraan Cuaca Hari Ini ☁️\n> ${info.name}\n\n`
                         + `\`\`\`Deskripsi/Desc: ${info.desc}\nSuhu/Temp: ${info.temp}\nTerasa/Feels like: ${info.feels}\nTekanan/Pressure: ${info.press}\nKelembaban/Humidity: ${info.humi}\n`
                         + `Jarak Pandang/Visibility: ${info.visible}\nKecepatan Angin/Wind Speed: ${info.wind}\`\`\``
-                        + `\n\n*Powered by* openweathermap.org\nMore https://openweathermap.org/city/${info.id}`
+                        + `\n\n*Ayra si Comel* • OpuxTad"\nMore https://openweathermap.org/city/${info.id}`
                     await msg.reply(text);
                 }
             }
