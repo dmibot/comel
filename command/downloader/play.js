@@ -44,7 +44,7 @@ module.exports = {
                     await sock.sendMessage(from, {
                         text: "Wrong music?\nclick button below to choose another search result.",
                         buttonText: "Search Result",
-                        footer: "Kaguya PublicBot • FaizBastomi",
+                        footer: "Ayra si Comel • OpuxTad\nSawo12 Base",
                         mentions: [sender],
                         sections
                     }, { quoted: respMsg });
