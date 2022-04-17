@@ -29,7 +29,7 @@ module.exports = {
         })
         // 
         if (check.size >= 257) return await msg.reply("Group Full");
-        if (check.size < 80) return await msg.reply("The minimum requirement for group members must be more than 80 people.");
+        if (check.size < 5) return await msg.reply("The minimum requirement for group members must be more than 4 people.");
         // Trying to join group with given invite code
         await sock.groupAcceptInvite(code).catch(async () => {
             await msg.reply("Looks like the group already full or became invalid when I'm trying to join :/");

@@ -5,6 +5,6 @@ module.exports = {
     category: 'misc',
     desc: 'Bot response in second.',
     async exec(msg, sock) {
-        await msg.reply(`*_${calculatePing(msg.messageTimestamp, Date.now())} second(s)_*`)
+        await msg.reply(`*_${"🚀Nge-Ping Bos😁?\n" + calculatePing(msg.messageTimestamp, Date.now())} detik_*`)
     }
 }

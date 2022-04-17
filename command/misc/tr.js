@@ -17,7 +17,7 @@ module.exports = {
                 text = await translate(args.slice(1).join(" "), args[0]);
                 await msg.reply(text);
             } else {
-                msg.reply("Reply sebuah pesan atau ikuti format berikut.\n!tr <bahasa> <teks>\njangan gunakan <> saat menggunakan perintah.\nGunakan format ISO 3166-1 alpha-2 untuk kode bahasa negara :).");
+                msg.reply("Reply sebuah pesan atau ikuti format berikut.\n!tr <kodebahasa|misal:id/en> <teks>\njangan gunakan <> saat menggunakan perintah.\nGunakan format ISO 3166-1 alpha-2 untuk kode bahasa negara :).");
             }
         } catch (e) { await msg.reply(e) }
     }
