@@ -9,7 +9,7 @@ const AUTH = 'Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs
 const igdl = require("./instagram");
 
 /**
- * Request to website
+ * Request to website/url?
  * @param {string} url url
  * @param {import("axios").AxiosRequestConfig} config axios config
  */
@@ -187,7 +187,7 @@ class Downloader extends igdl {
         }
     }
     /**
-     * Download TikTok Video
+     * Download TikTok Video alay
      * @param {string} url TikTok video link
      */
     async ttdl(url) {
