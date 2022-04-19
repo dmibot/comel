@@ -34,7 +34,7 @@ module.exports = {
                 }
             }
             let str = '\t'.repeat(13) + "\`\`\`NAMAKU AYRA\`\`\`\n\n"
-                + `Hello, ${pushName === undefined ? sender.split("@")[0] : pushName}\n*Here My Command List*\n\n`;
+                + `Hello, ${pushName === undefined ? sender.split("@")[0] : pushName}\n*Berikut Beberapa Command/Perintah Yang dapat kulakukan*\n\n`;
             const keys = Object.keys(category);
             for (const key of keys) {
                 str += `*${key.toUpperCase()}*\n~> \`\`\`${category[key]
@@ -46,7 +46,8 @@ module.exports = {
                 footer: "Ayra si Comel • OpuxTad\nSawo12 Base",
                 templateButtons: [
                     { urlButton: { displayText: "Whats Me?", url: "https://wa.me/6281268414805" } },
-                    { urlButton: { displayText: "My Telegram", url: "https://t.me/bangopux" } }
+                    { urlButton: { displayText: "My Telegram", url: "https://t.me/bangopux" } },
+                    { urlButton: { displayText: "Instagram", url: "https://instagram.com/tammyartha" } }
                 ]
             }, { quoted: msg })
         }
